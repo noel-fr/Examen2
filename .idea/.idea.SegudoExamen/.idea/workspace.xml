@@ -9,56 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="953742e6-0992-43df-9fd4-24c94e750df1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SegudoExamen/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SegudoExamen/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SegudoExamen/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SegudoExamen/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SegudoExamen/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Controllers/AuthController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Controllers/BooksController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Controllers/FirebaseTestController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Controllers/LoansController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Controllers/ReportsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Controllers/ReservationsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Controllers/UsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/AuthResponseDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/BookDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/FineManagementDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/LoanDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/LoginDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/MorosoReportDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/OverdueLoanReportDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/PopularBookReportDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/RegisterDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/ReservationDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/RoleUpdateDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/StatisticsDashboardDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/DTOs/StatusUpdateDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Models/Book.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Models/Loan.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Models/Reservation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/SegudoExamen.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/SegudoExamen.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/AuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/BookService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/FirebaseServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/IAuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/IBookService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/ILoanService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/IReportService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/IReservationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/LoanService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/ReportService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/Services/ReservationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SegudoExamen/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
-    </list>
+    <list default="true" id="953742e6-0992-43df-9fd4-24c94e750df1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765470651401</updated>
-      <workItem from="1765470652918" duration="13066000" />
+      <workItem from="1765470652918" duration="13365000" />
     </task>
     <servers />
   </component>
