@@ -16,10 +16,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Content Update="Config\firebase-credentials.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
