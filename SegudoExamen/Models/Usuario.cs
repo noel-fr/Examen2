@@ -16,6 +16,9 @@ namespace SegundoExamen.Models
 
         [FirestoreProperty]
         public string Correo { get; set; } = string.Empty;
+        
+        [FirestoreProperty] // <-- ¡CRÍTICO: Agregado para guardar el hash!
+        public string? PasswordHash { get; set; } 
 
         [FirestoreProperty]
         public string NumeroIdentidad { get; set; } = string.Empty;
@@ -27,7 +30,7 @@ namespace SegundoExamen.Models
         public string Telefono { get; set; } = string.Empty;
 
         [FirestoreProperty]
-        public string Rol { get; set; } = "usuario";
+        public string Rol { get; set; } = "usuario"; // "usuario", "bibliotecario", "admin"
 
         [FirestoreProperty]
         public bool Activo { get; set; } = true;
@@ -36,6 +39,6 @@ namespace SegundoExamen.Models
         public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
 
         [FirestoreProperty]
-        public decimal Multas { get; set; } = 0;
+        public decimal Multas { get; set; } = 0; // Multas en Lempiras
     }
 }

@@ -18,11 +18,11 @@ namespace SegundoExamen.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
+        public async Task<IActionResult> Register([FromBody] RegisterDto dto)
         {
             try
             {
-                var response = await _authService.Register(registerDto);
+                var response = await _authService.Register(dto);
                 return Ok(response);
             }
             catch (Exception ex)
@@ -32,11 +32,11 @@ namespace SegundoExamen.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
+        public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
             try
             {
-                var response = await _authService.Login(loginDto);
+                var response = await _authService.Login(dto);
                 return Ok(response);
             }
             catch (Exception ex)
@@ -47,17 +47,21 @@ namespace SegundoExamen.Controllers
 
         [HttpGet("me")]
         [Authorize]
-        public async Task<IActionResult> GetCurrentUser()
+        public async Task<IActionResult> Me()
         {
             try
             {
-                var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(usuarioId))
-                    return Unauthorized(new { error = "Token no válido" });
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Unauthorized(new { error = "Token inválido" });
+                }
 
-                var usuario = await _authService.GetUsuarioById(usuarioId);
+                var usuario = await _authService.GetUsuarioById(userId);
                 if (usuario == null)
+                {
                     return NotFound(new { error = "Usuario no encontrado" });
+                }
 
                 return Ok(usuario);
             }

@@ -19,16 +19,18 @@ namespace SegundoExamen.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateReserva([FromBody] CreateReservaDto createReservaDto)
+        public async Task<IActionResult> Create([FromBody] CreateReservaDto dto)
         {
             try
             {
                 var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(usuarioId))
-                    return Unauthorized(new { error = "Token no válido" });
 
-                var reserva = await _reservaService.CreateReserva(usuarioId, createReservaDto);
-                return CreatedAtAction(nameof(GetReservaById), new { id = reserva.Id }, reserva);
+                if (string.IsNullOrEmpty(usuarioId))
+                    return Unauthorized(new { error = "Token inválido" });
+
+                // ⬇️ AHORA SOLO PASAMOS usuarioId Y dto
+                var reserva = await _reservaService.CreateReserva(usuarioId, dto);
+                return Ok(reserva);
             }
             catch (Exception ex)
             {
@@ -38,79 +40,56 @@ namespace SegundoExamen.Controllers
 
         [HttpGet]
         [Authorize(Roles = "bibliotecario,admin")]
-        public async Task<IActionResult> GetAllReservas()
+        public async Task<IActionResult> GetAll()
         {
-            try
-            {
-                var reservas = await _reservaService.GetAllReservas();
-                return Ok(reservas);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var reservas = await _reservaService.GetAllReservas();
+            return Ok(reservas);
         }
 
         [HttpGet("mis-reservas")]
-        public async Task<IActionResult> GetMisReservas()
+        public async Task<IActionResult> MisReservas()
         {
-            try
-            {
-                var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(usuarioId))
-                    return Unauthorized(new { error = "Token no válido" });
+            var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(usuarioId))
+                return Unauthorized(new { error = "Token inválido" });
 
-                var reservas = await _reservaService.GetReservasByUsuarioId(usuarioId);
-                return Ok(reservas);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var reservas = await _reservaService.GetReservasByUsuarioId(usuarioId);
+            return Ok(reservas);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetReservaById(string id)
+        public async Task<IActionResult> GetById(string id)
         {
-            try
-            {
-                var reserva = await _reservaService.GetReservaById(id);
-                if (reserva == null)
-                    return NotFound(new { error = "Reserva no encontrada" });
-
-                return Ok(reserva);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var reserva = await _reservaService.GetReservaById(id);
+            if (reserva == null) return NotFound(new { error = "Reserva no encontrada" });
+            return Ok(reserva);
         }
 
         [HttpGet("libro/{libroId}")]
         [Authorize(Roles = "bibliotecario,admin")]
-        public async Task<IActionResult> GetReservasByLibro(string libroId)
+        public async Task<IActionResult> GetByLibro(string libroId)
         {
-            try
-            {
-                var reservas = await _reservaService.GetReservasByLibroId(libroId);
-                return Ok(reservas);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var reservas = await _reservaService.GetReservasByLibroId(libroId);
+            return Ok(reservas);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> CancelReserva(string id)
+        public async Task<IActionResult> Cancel(string id)
         {
             try
             {
-                var result = await _reservaService.CancelReserva(id);
-                if (!result)
-                    return NotFound(new { error = "Reserva no encontrada" });
+                var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var rol = User.FindFirst(ClaimTypes.Role)?.Value;
 
-                return Ok(new { message = "Reserva cancelada exitosamente" });
+                if (string.IsNullOrEmpty(usuarioId))
+                    return Unauthorized(new { error = "Token inválido" });
+
+                // Para simplificar: delegamos toda la validación al service
+                var result = await _reservaService.CancelReserva(id);
+
+                if (!result) return NotFound(new { error = "Reserva no encontrada" });
+
+                return NoContent();
             }
             catch (Exception ex)
             {

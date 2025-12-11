@@ -14,11 +14,14 @@ namespace SegundoExamen.DTOs
 
         public int? AnoPublicacion { get; set; }
 
+        public int? CopiasTotal { get; set; } // Agregado para validación de Escenario 2
+
         public int? CopiasDisponibles { get; set; }
 
         public string? Ubicacion { get; set; }
 
-        public string? Estado { get; set; }
+        [RegularExpression("^(disponible|agotado|en mantenimiento)$", ErrorMessage = "Estado inválido")]
+        public string? Estado { get; set; } //
 
         public string? Descripcion { get; set; }
     }

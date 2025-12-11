@@ -19,16 +19,18 @@ namespace SegundoExamen.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreatePrestamo([FromBody] CreatePrestamoDto createPrestamoDto)
+        public async Task<IActionResult> CreatePrestamo([FromBody] CreatePrestamoDto dto)
         {
             try
             {
                 var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(usuarioId))
-                    return Unauthorized(new { error = "Token no válido" });
 
-                var prestamo = await _prestamoService.CreatePrestamo(usuarioId, createPrestamoDto);
-                return CreatedAtAction(nameof(GetPrestamoById), new { id = prestamo.Id }, prestamo);
+                if (string.IsNullOrEmpty(usuarioId))
+                    return Unauthorized(new { error = "Token inválido" });
+
+                // ⬇️ AHORA SOLO PASAMOS 2 PARÁMETROS
+                var prestamo = await _prestamoService.CreatePrestamo(usuarioId, dto);
+                return Ok(prestamo);
             }
             catch (Exception ex)
             {
@@ -38,79 +40,47 @@ namespace SegundoExamen.Controllers
 
         [HttpGet]
         [Authorize(Roles = "bibliotecario,admin")]
-        public async Task<IActionResult> GetAllPrestamos()
+        public async Task<IActionResult> GetAll()
         {
-            try
-            {
-                var prestamos = await _prestamoService.GetAllPrestamos();
-                return Ok(prestamos);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var prestamos = await _prestamoService.GetAllPrestamos();
+            return Ok(prestamos);
         }
 
         [HttpGet("mis-prestamos")]
-        public async Task<IActionResult> GetMisPrestamos()
+        public async Task<IActionResult> MisPrestamos()
         {
-            try
-            {
-                var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(usuarioId))
-                    return Unauthorized(new { error = "Token no válido" });
+            var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(usuarioId))
+                return Unauthorized(new { error = "Token inválido" });
 
-                var prestamos = await _prestamoService.GetPrestamosByUsuarioId(usuarioId);
-                return Ok(prestamos);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var prestamos = await _prestamoService.GetPrestamosByUsuarioId(usuarioId);
+            return Ok(prestamos);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetPrestamoById(string id)
+        public async Task<IActionResult> GetById(string id)
         {
-            try
-            {
-                var prestamo = await _prestamoService.GetPrestamoById(id);
-                if (prestamo == null)
-                    return NotFound(new { error = "Préstamo no encontrado" });
-
-                return Ok(prestamo);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var prestamo = await _prestamoService.GetPrestamoById(id);
+            if (prestamo == null) return NotFound(new { error = "Préstamo no encontrado" });
+            return Ok(prestamo);
         }
 
         [HttpGet("vencidos")]
         [Authorize(Roles = "bibliotecario,admin")]
-        public async Task<IActionResult> GetVencidosPrestamos()
+        public async Task<IActionResult> GetVencidos()
         {
-            try
-            {
-                var prestamos = await _prestamoService.GetVencidosPrestamos();
-                return Ok(prestamos);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var vencidos = await _prestamoService.GetVencidosPrestamos();
+            return Ok(vencidos);
         }
 
         [HttpPut("{id}/devolver")]
         [Authorize(Roles = "usuario,bibliotecario,admin")]
-        public async Task<IActionResult> DevolverPrestamo(string id)
+        public async Task<IActionResult> Devolver(string id)
         {
             try
             {
                 var prestamo = await _prestamoService.DevolverPrestamo(id);
-                if (prestamo == null)
-                    return NotFound(new { error = "Préstamo no encontrado" });
-
+                if (prestamo == null) return NotFound(new { error = "Préstamo no encontrado" });
                 return Ok(prestamo);
             }
             catch (Exception ex)
@@ -120,19 +90,16 @@ namespace SegundoExamen.Controllers
         }
 
         [HttpPut("{id}/renovar")]
-        public async Task<IActionResult> RenovarPrestamo(string id)
+        public async Task<IActionResult> Renovar(string id)
         {
             try
             {
-                var usuarioId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if (string.IsNullOrEmpty(usuarioId))
-                    return Unauthorized(new { error = "Token no válido" });
-
                 var prestamo = await _prestamoService.RenovarPrestamo(id);
-                if (prestamo == null)
-                    return NotFound(new { error = "Préstamo no encontrado" });
-
                 return Ok(prestamo);
+            }
+            catch (NotImplementedException)
+            {
+                return BadRequest(new { error = "La renovación no está implementada." });
             }
             catch (Exception ex)
             {

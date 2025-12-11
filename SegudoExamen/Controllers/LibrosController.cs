@@ -1,5 +1,4 @@
-﻿using System.Security.Claims;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SegundoExamen.DTOs;
 using SegundoExamen.Services.Interfaces;
@@ -20,11 +19,11 @@ namespace SegundoExamen.Controllers
 
         [HttpPost]
         [Authorize(Roles = "bibliotecario,admin")]
-        public async Task<IActionResult> CreateLibro([FromBody] CreateLibroDto createLibroDto)
+        public async Task<IActionResult> CreateLibro([FromBody] CreateLibroDto dto)
         {
             try
             {
-                var libro = await _libroService.CreateLibro(createLibroDto);
+                var libro = await _libroService.CreateLibro(dto);
                 return CreatedAtAction(nameof(GetLibroById), new { id = libro.Id }, libro);
             }
             catch (Exception ex)
@@ -34,89 +33,50 @@ namespace SegundoExamen.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllLibros()
+        public async Task<IActionResult> GetLibros()
         {
-            try
-            {
-                var libros = await _libroService.GetAllLibros();
-                return Ok(libros);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var libros = await _libroService.GetAllLibros();
+            return Ok(libros);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetLibroById(string id)
         {
-            try
-            {
-                var libro = await _libroService.GetLibroById(id);
-                if (libro == null)
-                    return NotFound(new { error = "Libro no encontrado" });
-
-                return Ok(libro);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
-        }
-
-        [HttpGet("search/{searchTerm}")]
-        public async Task<IActionResult> SearchLibros(string searchTerm)
-        {
-            try
-            {
-                var libros = await _libroService.SearchLibros(searchTerm);
-                return Ok(libros);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var libro = await _libroService.GetLibroById(id);
+            if (libro == null) return NotFound(new { error = "Libro no encontrado" });
+            return Ok(libro);
         }
 
         [HttpGet("categoria/{categoria}")]
-        public async Task<IActionResult> GetLibrosByCategoria(string categoria)
+        public async Task<IActionResult> GetByCategoria(string categoria)
         {
-            try
-            {
-                var libros = await _libroService.GetLibrosByCategoria(categoria);
-                return Ok(libros);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var libros = await _libroService.GetLibrosByCategoria(categoria);
+            return Ok(libros);
         }
 
         [HttpGet("autor/{autor}")]
-        public async Task<IActionResult> GetLibrosByAutor(string autor)
+        public async Task<IActionResult> GetByAutor(string autor)
         {
-            try
-            {
-                var libros = await _libroService.GetLibrosByAutor(autor);
-                return Ok(libros);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            var libros = await _libroService.GetLibrosByAutor(autor);
+            return Ok(libros);
+        }
+
+        [HttpGet("search/{term}")]
+        public async Task<IActionResult> Search(string term)
+        {
+            var libros = await _libroService.SearchLibros(term);
+            return Ok(libros);
         }
 
         [HttpPut("{id}")]
         [Authorize(Roles = "bibliotecario,admin")]
-        public async Task<IActionResult> UpdateLibro(string id, [FromBody] UpdateLibroDto updateLibroDto)
+        public async Task<IActionResult> UpdateLibro(string id, [FromBody] UpdateLibroDto dto)
         {
             try
             {
-                var libro = await _libroService.UpdateLibro(id, updateLibroDto);
-                if (libro == null)
-                    return NotFound(new { error = "Libro no encontrado" });
-
-                return Ok(libro);
+                var updated = await _libroService.UpdateLibro(id, dto);
+                if (updated == null) return NotFound(new { error = "Libro no encontrado" });
+                return Ok(updated);
             }
             catch (Exception ex)
             {
@@ -131,10 +91,8 @@ namespace SegundoExamen.Controllers
             try
             {
                 var result = await _libroService.DeleteLibro(id);
-                if (!result)
-                    return NotFound(new { error = "Libro no encontrado" });
-
-                return Ok(new { message = "Libro eliminado exitosamente" });
+                if (!result) return NotFound(new { error = "Libro no encontrado" });
+                return NoContent();
             }
             catch (Exception ex)
             {
