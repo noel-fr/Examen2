@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\controllers\\libroscotroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\controllers\\libroscotroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\controllers\\reservascontrolles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\controllers\\reservascontrolles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\controllers\\sistemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\controllers\\sistemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\models\\prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\models\\prestamo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\controllers\\reportescontroller.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\controllers\\reportescontroller.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|c:\\users\\ororl\\onedrive\\documentos\\github\\examen2\\segudoexamen\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82F1AEB3-349C-462F-87E1-6192C1B6A3EF}|SegudoExamen\\SegudoExamen.csproj|solutionrelative:segudoexamen\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\BasicAuthenticationHandler.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "SegudoExamen\\BasicAuthenticationHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T06:00:05.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReportesController.cs.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\ReportesController.cs.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Controllers\\ReportesController.cs.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\ReportesController.cs.cs",
+              "RelativeToolTip": "SegudoExamen\\Controllers\\ReportesController.cs.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAQwHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:22:45.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PrestamosController.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\PrestamosController.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Controllers\\PrestamosController.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\PrestamosController.cs",
+              "RelativeToolTip": "SegudoExamen\\Controllers\\PrestamosController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAQwIYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:22:09.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "SegudoExamen\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwFIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:17:05.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SistemController.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\SistemController.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Controllers\\SistemController.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\SistemController.cs",
+              "RelativeToolTip": "SegudoExamen\\Controllers\\SistemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:10:34.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservasControlles.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\ReservasControlles.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Controllers\\ReservasControlles.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\ReservasControlles.cs",
+              "RelativeToolTip": "SegudoExamen\\Controllers\\ReservasControlles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:09:33.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Services\\DataService.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Services\\DataService.cs",
+              "RelativeToolTip": "SegudoExamen\\Services\\DataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T03:46:13.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Prestamo.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Models\\Prestamo.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Models\\Prestamo.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Models\\Prestamo.cs",
+              "RelativeToolTip": "SegudoExamen\\Models\\Prestamo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T03:45:41.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibrosCotroller.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\LibrosCotroller.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Controllers\\LibrosCotroller.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\LibrosCotroller.cs",
+              "RelativeToolTip": "SegudoExamen\\Controllers\\LibrosCotroller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:49:01.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SegudoExamen\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:48:24.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\.gitignore",
+              "RelativeDocumentMoniker": "SegudoExamen\\.gitignore",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\.gitignore",
+              "RelativeToolTip": "SegudoExamen\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-11T02:35:48.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Models\\Libro.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Models\\Libro.cs",
+              "RelativeToolTip": "SegudoExamen\\Models\\Libro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:30:04.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Models\\Usuario.cs",
+              "RelativeToolTip": "SegudoExamen\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:29:22.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\appsettings.json",
+              "RelativeDocumentMoniker": "SegudoExamen\\appsettings.json",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\appsettings.json",
+              "RelativeToolTip": "SegudoExamen\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T02:27:11.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Program.cs",
+              "RelativeDocumentMoniker": "SegudoExamen\\Program.cs",
+              "ToolTip": "C:\\Users\\ororl\\OneDrive\\Documentos\\GitHub\\Examen2\\SegudoExamen\\Program.cs",
+              "RelativeToolTip": "SegudoExamen\\Program.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:17:54.615Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
